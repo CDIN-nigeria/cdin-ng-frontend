@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import Navbar from './components/navbar'
 import Hero from './home/hero'
+import Footercomp from './components/footer'
 
 
 export default function Home() {
@@ -16,8 +17,7 @@ export default function Home() {
 
     <Hero />
 </div>
-    CDIN homepage
-    ...in progress
+    <Footercomp />
    </div>
   )
 }

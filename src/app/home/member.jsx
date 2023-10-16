@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { global } from 'styled-jsx/css';
+
 const Member = () => {
     const partnershipPlatforms = [
         "images/africa.jpg",
         "images/charity.jpg",
-        "images/colab.jpg",
         "images/dam.jpg",
         "images/dog.jpg",
         "images/fintech.jpg",
@@ -14,23 +14,31 @@ const Member = () => {
         "images/sab.jpg",
     ];
 
-    return (
+    const marqueeRef = useRef(null);
+
+    const scroll = (scrollOffset) => {
+        if (marqueeRef.current) {
+            marqueeRef.current.scrollLeft += scrollOffset;
+        }
+    };
+
+   return (
         <div>
-            <div className="h-16 bg-gray-800 flex items-center justify-center">
-                <h1 className="text-white text-2xl font-bold">Image Slider</h1>
+            <div className="marquee" ref={marqueeRef} style={{ whiteSpace: 'nowrap', overflow: 'hidden' }}>
+                {partnershipPlatforms.map((image, index) => (
+                    <img
+                        key={index}
+                        src={image}
+                        alt={`Partnership Platform ${index}`}
+                        className="inline-block w-36 h-36 rounded-full m-4"
+                    />
+                ))}
             </div>
-            <div className="flex items-center my-5 ml-16 w-full overflow-hidden">
-                <div className="slider-container flex space-x-4" style={{ animation: 'marquee 30s linear infinite' }}>
-                    {partnershipPlatforms.map((image, index) => (
-                        <img
-                            key={index}
-                            src={image}
-                            alt={`partnership-${index}`}
-                            className="w-64 h-64 object-cover"
-                        />
-                    ))}
-                </div>
+            <div className="flex justify-center mt-4">
+                <button onClick={() => scroll(-100)} className="m-2 p-2 bg-gray-300">Left</button>
+                <button onClick={() => scroll(100)} className="m-2 p-2 bg-gray-300">Right</button>
             </div>
+            
         </div>
     );
 };

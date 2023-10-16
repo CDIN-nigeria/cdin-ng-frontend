@@ -5,3 +5,19 @@
 body{
     background-color: #d9ffea9f;
 }
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100% * 10));
+    }
+}
+
+.animate-marquee {
+    animation-name: marquee;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+

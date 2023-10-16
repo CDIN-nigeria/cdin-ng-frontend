@@ -2,7 +2,13 @@
 import Image from 'next/image'
 import Navbar from './components/navbar'
 import Hero from './home/hero'
+
+import Strategy from './home/strategy'
+import Member from './home/member'
+
+
 import Footercomp from './components/footer'
+
 
 
 export default function Home() {
@@ -17,7 +23,16 @@ export default function Home() {
 
     <Hero />
 </div>
+
+<div>
+    <Strategy /> 
+    </div>
+<div>
+    <Member/>
+</div>
+
     <Footercomp />
+
    </div>
   )
 }

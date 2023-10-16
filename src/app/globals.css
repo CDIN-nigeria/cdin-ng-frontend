@@ -5,3 +5,11 @@
 body{
     background-color: #d9ffea9f;
 }
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100% * 10));
+    }
+}

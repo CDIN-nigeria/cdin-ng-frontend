@@ -3,7 +3,7 @@ import React from 'react'
 const Whatwedo = () => {
   return (
     <div className='flex m-10 border-2'>
-      <div className='ml-10 px-10'>
+      <div className='ml-10 px-10 w-1/3'>
       <div className='m-5 flex items-center border-x-2 px-2 text-gray-800'>
     <img className='w-8 h-8 mr-3' src="images/ham.png" alt="Ham" /> 
     <div>
@@ -33,16 +33,46 @@ const Whatwedo = () => {
     </div>
 </div>
       </div>
-      <div className='m-5 '>
-      <p>
-      <img className='w-8 h-8 mr-3' src="images/arr.png" alt="Ham" />
-      <span>Building a Sustainable future for Blockchain Industry in Africa</span>
-      </p>
-      </div>
-      <div className='m-5 '>
+      <div className=' w-1/3'>
+        <p className='border-b-2 pb-3 text-xl font-bold'>What we do</p>
+        <div className="flex mt-3">
+    <img className='w-8 h-8  mr-3' src="images/arr.png" alt="Ham" />
+    <p className='font-bold text-l'>Building a Sustainable future for the Blockchain Industry in Africa</p>
+</div>
+<div className="flex mt-3">
+    <img className='w-8 h-8  mr-3' src="images/arr.png" alt="Ham" />
+    <p className='font-bold text-l '>Stimulating Transformation of the African DLT Market</p>
+</div>
+<div className="flex mt-3">
+    <img className='w-8 h-8  mr-3' src="images/arr.png" alt="Ham" />
+    <p className='font-bold text-l'>Driving Policy Advocacy and Industry Dialogue</p>
+</div>
+<div className="flex mt-3">
+    <img className='w-8 h-8  mr-3' src="images/arr.png" alt="Ham" />
+    <p className='font-bold text-l '> Facilitating stakeholder's collaboration in the Nigeria DLT Ecosystem</p>
+</div>
+<div className="flex mt-3">
+    <img className='w-8 h-8  mr-3' src="images/arr.png" alt="Ham" />
+    <p className='font-bold text-l'> Creating value-chain and career opportunity in the Nigeria DLT ecosystem </p>
+</div>
+<div className="flex mt-3">
+    <img className='w-8 h-8  mr-3' src="images/arr.png" alt="Ham" />
+    <p className='font-bold text-l '>Promoting Growth through Crytographic Assurance</p>
+</div>
+<div className="flex mt-3">
+    <img className='w-8 h-8  mr-3' src="images/arr.png" alt="Ham" />
+    <p className='font-bold text-l '>Discouraging unlawful practices and supporting AML/CFT</p>
+</div>
+
+ </div>
+      <div className='m-5 w-1/3 '>
       <img className='mr-3' src="images/dev.jpg" alt="Ham" />
       <p>
         <p className='text-l font-bold my-5'>Campus Blockchain Development Programme (CBDP)</p>
+        <p className="text-normal text-gray-500 my-4">
+    The CDIN recently launched a Campus Blockchain Development Programme (CBDP) through its Nigeria Blockchain Alliance initiative by conducting a campus blockchain hackathon. The programme was started in a pilot phase that involved only a few higher institutions in Nigeria. The schools that participated in the pilot include Ahmadu Bello University (ABU), Federal University of Technology Akure (FUTA), University of Nigeria (UNN), Covenant University, and Kwara State University.
+</p>
+
       </p>
       </div>
     </div>

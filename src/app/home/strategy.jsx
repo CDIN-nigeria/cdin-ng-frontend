@@ -9,7 +9,7 @@ const Strategy = () => {
             <div className="w-full border-2 border-gray-300">
                 <div className="flex flex-col md:flex-row">
                      <div className="w-full md:w-1/2">
-                        <img className="w-full h-full md:h-56 object-cover"
+                        <img className=" md:h-56 object-cover"
                         src="images/platform.jpg"
                         alt="Card"/>
         </div>

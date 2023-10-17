@@ -5,6 +5,7 @@ import Hero from './home/hero'
 
 import Strategy from './home/strategy'
 import Member from './home/member'
+import Whatwedo from './home/whatwedo'
 
 
 import Footercomp from './components/footer'
@@ -30,6 +31,7 @@ export default function Home() {
 <div>
     <Member/>
 </div>
+<Whatwedo/>
 
     <Footercomp />
 

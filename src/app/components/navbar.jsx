@@ -26,6 +26,11 @@ const Navbar = () => {
           <a href="#" className="text-white">
           Contact</a>
           </li>
+          <li>
+          <a href="#" className="text-white">
+          Login</a>
+          </li>
+         
       </ul>
       <div className="flex space-x-4">
         <FaSearch className="text-white" />

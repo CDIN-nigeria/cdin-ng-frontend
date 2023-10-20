@@ -49,7 +49,7 @@ const Whatwedo = () => {
 </div>
 <div className="flex mt-3">
     <img className='w-8 h-8  mr-3' src="images/arr.png" alt="Ham" />
-    <p className='font-bold text-l '> Facilitating stakeholder's collaboration in the Nigeria DLT Ecosystem</p>
+    <p className='font-bold text-l'> Facilitating stakeholders collaboration in the Nigeria DLT Ecosystem</p>
 </div>
 <div className="flex mt-3">
     <img className='w-8 h-8  mr-3' src="images/arr.png" alt="Ham" />

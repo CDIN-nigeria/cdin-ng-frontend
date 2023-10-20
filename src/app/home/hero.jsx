@@ -2,11 +2,7 @@
 import React, { useState } from 'react';
 
 import SwiperCore, { Navigation, Pagination, Autoplay } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
 
-
-// Initialize Swiper plugins
-SwiperCore.use([Navigation, Pagination, Autoplay]);
 
 const Hero = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);

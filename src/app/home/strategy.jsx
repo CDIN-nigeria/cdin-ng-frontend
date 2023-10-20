@@ -5,8 +5,8 @@ const Strategy = () => {
         <div className="  md:flex-row md:justify-center md:items-center">
             <div className="w-full my-10">
                 <div className="flex flex-col md:flex-row">
-                     <div className="w-full md:w-1/2 mx-10 border-r-2">
-                        <img className="w-96 hover:translate-x-4 h-full ml-5 md:h-56 object-cover"
+                     <div className="w-full md:w-1/2  border-r-2">
+                        <img className="w-96 h-full ml-5 md:h-56 object-cover"
                         src="images/platform.jpg"
                         alt="Card"/>
         </div>
@@ -22,7 +22,7 @@ const Strategy = () => {
 
 <div className="w-full my-10">
                 <div className="flex flex-col md:flex-row">
-                       <div className="w-full md:w-1/2 mx-10 border-r-2">
+                       <div className="w-full md:w-1/2 border-r-2">
                         <img className="w-96 h-full ml-5 md:h-56 object-cover"
                         src="images/colab.png"
                         alt="Card"/>
@@ -38,7 +38,7 @@ const Strategy = () => {
 
             <div className="w-full  my-10">
                 <div className="flex flex-col md:flex-row">
-                     <div className="w-full mx-10 border-r-2 md:w-1/2">
+                     <div className="w-full  border-r-2 md:w-1/2">
                         <img className="w-96 h-full  ml-5  md:h-56 object-cover"
                         src="images/rd.jpg"
                         alt="Card"/>

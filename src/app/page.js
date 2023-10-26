@@ -16,10 +16,10 @@ export default function Home() {
 
   return (
    <div className="w-full flex flex-col">
-{/* <div className="w-full">
+<div className="w-full">
 
     <Navbar />
-</div>*/}
+</div>
 <div className="w-full">
 
     <Hero />
@@ -28,11 +28,11 @@ export default function Home() {
 <div>
     <Strategy /> 
     </div>
-<div>
+<div className='mt-8'>
     <Member/>
 </div>
 <Whatwedo/>
-<Index/>
+{/* <Index/> */}
     <Footercomp />
 
    </div>

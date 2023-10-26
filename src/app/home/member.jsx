@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import { global } from 'styled-jsx/css';
+import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 
 const Member = () => {
     const partnershipPlatforms = [
@@ -23,8 +24,8 @@ const Member = () => {
     };
 
    return (
-        <div>
-            <div className="marquee" ref={marqueeRef} style={{ whiteSpace: 'nowrap', overflow: 'hidden' }}>
+        <div className='w-full overflow-clip'>
+            <div className="marquee px-8 flex" ref={marqueeRef} >
                 {partnershipPlatforms.map((image, index) => (
                     <img
                         key={index}
@@ -35,8 +36,9 @@ const Member = () => {
                 ))}
             </div>
             <div className="flex justify-center mt-4">
-                <button onClick={() => scroll(-100)} className="m-2 p-2 bg-gray-300">Left</button>
-                <button onClick={() => scroll(100)} className="m-2 p-2 bg-gray-300">Right</button>
+            <FiChevronLeft className="text-[4em] text-black" onClick={() => scroll(-100)} />
+            
+                <FiChevronRight className="text-[4em] text-black" onClick={() => scroll(100)} />
             </div>
             
         </div>

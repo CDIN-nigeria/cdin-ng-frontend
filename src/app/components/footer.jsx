@@ -1,6 +1,7 @@
 import React from 'react';
 import { AiOutlineHome, AiOutlineThunderbolt, AiOutlineSearch } from 'react-icons/ai';
-import { FiMail, FiPhone, FiGlobe } from 'react-icons/fi';
+import { FiMail, FiPhone, FiMapPin, FiGlobe } from 'react-icons/fi';
+
 import Image from 'next/image';
 
 const Footercomp = () => {
@@ -12,7 +13,7 @@ const Footercomp = () => {
             <Image src='/icons/logo.jpeg' alt='img' width={120} className='w-full h-[14em]' height={10}  />
           
             <div className="flex items-center">
-              <AiOutlineHome className="mr-2 text-green-600 text-[2em]" /> No 29 Mambilla Street, off Aso Drive, Three Arm Zone Maitama, Abuja. Nigeria
+              <FiMapPin className="mr-2 text-green-600 text-[2em]" /> No 29 Mambilla Street, off Aso Drive, Three Arm Zone Maitama, Abuja. Nigeria
             </div>
             <div className="flex items-center mt-2">
               <FiPhone className="mr-2 text-green-400 text-[2em]" /> +234 813 055 9170
@@ -45,7 +46,7 @@ const Footercomp = () => {
           </div>
         </div>
      
-        <div className="mt-4 m-auto w-fit">
+        <div className="mt-4 m-auto w-full text-center align-middle text-[0.7em] justify-center">
           <p>COPYRIGHT CRYPTOGRAPHIC DEVELOPMENT INITIATIVE IN NIGERIA @2023</p>
         </div>
       </div>

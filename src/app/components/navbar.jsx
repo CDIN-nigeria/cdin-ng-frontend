@@ -26,6 +26,10 @@ const Navbar = () => {
           <a href="#" className="text-white">
           Contact</a>
           </li>
+        <li>
+          <a href="/blog" className="text-white">
+          Blog</a>
+          </li>
           <li>
           <a href="#" className="text-white">
           Login</a>

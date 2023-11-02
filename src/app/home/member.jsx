@@ -1,6 +1,6 @@
-import React, { useRef } from 'react';
-import { global } from 'styled-jsx/css';
-import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+import React from 'react';
+// import { Carousel } from '@mui/material';
+import { FiChevronLeft, FiChevronRight, FiMapPin } from 'react-icons/fi'; // Import the location icon
 
 const Member = () => {
     const partnershipPlatforms = [
@@ -15,32 +15,22 @@ const Member = () => {
         "images/sab.jpg",
     ];
 
-    const marqueeRef = useRef(null);
-
-    const scroll = (scrollOffset) => {
-        if (marqueeRef.current) {
-            marqueeRef.current.scrollLeft += scrollOffset;
-        }
-    };
-
-   return (
-        <div className='w-full overflow-clip'>
-            <div className="marquee px-8 flex" ref={marqueeRef} >
+    return (
+        <div className="relative overflow-hidden">
+            {/* <Carousel animation="slide" autoPlay={5000} navButtonsAlwaysVisible>
                 {partnershipPlatforms.map((image, index) => (
-                    <img
-                        key={index}
-                        src={image}
-                        alt={`Partnership Platform ${index}`}
-                        className="inline-block w-36 h-36 rounded-full m-4"
-                    />
+                    <div key={index} className="flex items-center justify-center">
+                        <img
+                            src={image}
+                            alt={`Partnership Platform ${index}`}
+                            className="rounded-full m-4"
+                            width="150"
+                            height="150"
+                        />
+                        <FiMapPin className="text-primary text-2xl" /> 
+                    </div>
                 ))}
-            </div>
-            <div className="flex justify-center mt-4">
-            <FiChevronLeft className="text-[4em] text-black" onClick={() => scroll(-100)} />
-            
-                <FiChevronRight className="text-[4em] text-black" onClick={() => scroll(100)} />
-            </div>
-            
+            </Carousel> */}
         </div>
     );
 };

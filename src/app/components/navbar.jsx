@@ -27,7 +27,7 @@ const Navbar = () => {
           Contact</a>
           </li>
           <li>
-          <a href="#" className="text-white">
+          <a href="auth/login" className="text-white">
           Login</a>
           </li>
          

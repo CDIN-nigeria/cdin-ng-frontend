@@ -7,10 +7,17 @@ import Image from 'next/image';
 const Footercomp = () => {
   return (
     <div className="bg-gray-800 text-white py-4 w-full">
+            <div className="flex w-full">
+              <form className="flex justify-center items-center w-full">
+              <input type="email" placeholder="Enter your email" className="bg-gray-700 text-white p-2 rounded focus:outline-none" />
+              <button type="submit" className="bg-green-600 text-white px-4 py-2 rounded mt-2 hover:bg-green-700">
+                Subscribe
+              </button>
+            </form>
+            </div>
       <div className="container mx-auto px-4">
         <div className="flex flex-col sm:flex-row gap-4 justify-between w-full ">
           <div className='flex m-auto flex-col w-full gap-8'>
-            <Image src='/icons/logo.jpeg' alt='img' width={120} className='w-full h-[14em]' height={10}  />
           
             <div className="flex items-center">
               <FiMapPin className="mr-2 text-green-600 text-[2em]" /> No 29 Mambilla Street, off Aso Drive, Three Arm Zone Maitama, Abuja. Nigeria

@@ -11,7 +11,7 @@ const Navbar = () => {
       </div>
       <ul className="hidden md:flex list-none space-x-4">
         <li>
-          <a href="#" className="text-white">
+          <a href="/" className="text-white">
           Home</a>
           </li>
         <li>
@@ -31,7 +31,7 @@ const Navbar = () => {
           Blog</a>
           </li>
           <li>
-          <a href="#" className="text-white">
+          <a href="/auth/login" className="text-white">
           Login</a>
           </li>
          

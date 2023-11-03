@@ -21,7 +21,7 @@ const Hero = () => {
     <p className="text-white text-start">
         Having recorded good success on its Nigeria Blockchain Alliance (NBA) Initiative since 2015, driving awareness, education, policy advocacy, industry dialogue, and collaboration among stakeholders, the CDIN has taken the effort to another level by rebranding the NBA as Blockchain Industry Association of Nigeria (BIAN) focused on Advancing Blockchain Technology in Nigeria and Africa.
     </p>
-    <button className="mt-8 md:mt-12 bg-white hover:bg-green-500 text-green-500 font-semibold hover:text-white py-3 px-6 border border-green-500 hover:border-transparent rounded">
+    <button href="/auth/signup" className="mt-8 md:mt-12 bg-white hover:bg-green-500 text-green-500 font-semibold hover:text-white py-3 px-6 border border-green-500 hover:border-transparent rounded">
         Get Started
     </button>
 </div>

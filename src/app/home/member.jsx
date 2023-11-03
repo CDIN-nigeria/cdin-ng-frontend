@@ -1,8 +1,12 @@
-import React from 'react';
-// import { Carousel } from '@mui/material';
-import { FiChevronLeft, FiChevronRight, FiMapPin } from 'react-icons/fi'; // Import the location icon
+import React, { useRef } from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import { FiChevronLeft, FiChevronRight, FiMapPin } from 'react-icons/fi';
 
 const Member = () => {
+    const sliderRef = useRef(null);
+
     const partnershipPlatforms = [
         "images/africa.jpg",
         "images/charity.jpg",
@@ -15,22 +19,43 @@ const Member = () => {
         "images/sab.jpg",
     ];
 
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 5,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        autoplay: true,
+        autoplaySpeed: 5,
+        nextArrow: <FiChevronRight className="text-[4em] text-black" />,
+        prevArrow: <FiChevronLeft className="text-[4em] text-black" />,
+    };
+
+    const handleNextClick = () => {
+        sliderRef.current.slickNext();
+    }
+
+    const handlePrevClick = () => {
+        sliderRef.current.slickPrev();
+    }
+
     return (
         <div className="relative overflow-hidden">
-            {/* <Carousel animation="slide" autoPlay={5000} navButtonsAlwaysVisible>
+            <Slider {...settings} ref={sliderRef}>
                 {partnershipPlatforms.map((image, index) => (
                     <div key={index} className="flex items-center justify-center">
                         <img
                             src={image}
                             alt={`Partnership Platform ${index}`}
-                            className="rounded-full m-4"
+                            className="rounded-xl w-fit"
                             width="150"
                             height="150"
                         />
-                        <FiMapPin className="text-primary text-2xl" /> 
                     </div>
                 ))}
-            </Carousel> */}
+            </Slider>
+            <FiChevronLeft onClick={handlePrevClick} className="text-[4em] text-black cursor-pointer absolute left-0 top-1/2 transform -translate-y-1/2" />
+            <FiChevronRight onClick={handleNextClick} className="text-[4em] text-black cursor-pointer absolute right-0 top-1/2 transform -translate-y-1/2" />
         </div>
     );
 };

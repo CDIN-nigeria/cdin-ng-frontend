@@ -70,9 +70,9 @@ const AboutUs = () => {
         of them in 64 chapters worldwide.
       </p>
 </div>
-<div className="flex gap-8 m-auto px-8 ">
+<div className="flex sm:flex-row flex-col gap-8 m-auto px-8 ">
 
-{/* {currentComponent === 0 && ( */}
+
           <div className="w-full">
             <Vision />
            

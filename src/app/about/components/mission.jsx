@@ -26,7 +26,7 @@ const Mission = () => {
       className={`bg-green-100 p-8 w-full rounded shadow mb-6 fadeIn `}
     >
       <h2 className="text-2xl font-bold mb-4">Our Mission</h2>
-      <div className="flex items-center justify-center gap-4">
+      <div className="flex items-center flex-col sm:flex-row justify-center gap-4">
         <img
           src="/images/mission.jpg"
           alt="Mission"

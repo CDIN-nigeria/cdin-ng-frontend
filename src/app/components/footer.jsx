@@ -6,11 +6,11 @@ import Image from 'next/image';
 
 const Footercomp = () => {
   return (
-    <div className="bg-gray-800 text-white py-4 w-full flex flex-col gap-8">
+    <div className="bg-gray-800 text-white py-4 w-full flex flex-col gap-8 px-2">
             <div className="flex w-full flex-col items-center justify-center gap-8 ">
-              <p className="">Get all our latest news and Offers by subcribing to our newslatter</p>
+              <p className="text-center flex items-center">Get all our latest news and Offers by subcribing to our newslatter</p>
               <form className="flex justify-center items-center w-full">
-              <input type="email" placeholder="Enter your email" className="bg-[#c9c9c9] sm:w-1/3 text-white p-2 rounded-l focus:outline-none" />
+              <input type="email" placeholder="Enter your email" className="bg-[#c9c9c9] sm:w-1/3 text-black p-2 rounded-l focus:outline-none" />
               <button type="submit" className="bg-green-600 text-white px-4 py-2 rounded-r hover:bg-green-700">
                 Subscribe
               </button>
@@ -36,12 +36,11 @@ const Footercomp = () => {
           <div className='w-full flex px-8 gap-4 flex-col'>
             <h2 className="text-xl font-bold mb-4">Quick Links</h2>
             <ul className="list-none  ">
-              <li className="flex items-center mb-2"><a href="#">Home</a></li>
+              <li className="flex items-center mb-2"><a href="/">Home</a></li>
               <li className="flex items-center mb-2"><a href="#">Platforms</a></li>
-              <li className="flex items-center mb-2"><a href="#">R&D</a></li>
               <li className="flex items-center mb-2"><a href="#">Collaboration</a></li>
               <li className="flex items-center mb-2"><a href="#">Membership</a></li>
-              <li className="flex items-center mb-2"><a href="#">News</a></li>
+              <li className="flex items-center mb-2"><a href="/blog">Blog</a></li>
             </ul>
           </div>
           <div className='w-full flex px-8 gap-4 flex-col'>

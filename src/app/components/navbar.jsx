@@ -1,48 +1,64 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
-import { FaSearch, FaUser, FaShoppingCart } from 'react-icons/fa'; // Import icons from react-icons
-
+import { FaSearch, FaUser, FaShoppingCart, FaBars, FaTimes } from 'react-icons/fa'; // Import icons from react-icons
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <nav className="flex justify-between items-center bg-green-700 py-2 px-4">
+    <nav className="flex justify-between items-center bg-green-700 py-2 px-4 relative">
       <div className="text-white text-2xl font-bold rounded-full w-fit h-fit bg-red-400 overflow-clip">
         <Image src='/icons/logo.jpeg' alt='logo' width={60} height={60} />
       </div>
-      <ul className="hidden md:flex list-none space-x-4">
+      <div className="md:hidden z-[100]">
+        {isOpen ? (
+          <FaTimes className={`text-2xl z-[80] ${isOpen? 'text-black': 'text-white'}`} onClick={toggleMenu} />
+        ) : (
+          <FaBars className="text-white text-2xl" onClick={toggleMenu} />
+        )}
+      </div>
+      <ul className={`sm:flex-row absolute sm:relative gap-4 flex flex-col right-0 w-1/2 z-50 top-1/4 h-[70vh] sm:w-fit sm:h-fit  text-black bg-white list-disc sm:list-none px-4 py-8 ${isOpen ? '' : 'hidden'}`}>
         <li>
-          <a href="/" className="text-white">
-          Home</a>
-          </li>
+          <a href="/" className="text-xl sm:text-[1em] hover:bg-green-500 p-2">
+            Home
+          </a>
+        </li>
         <li>
-          <a href="/about" className="text-white">
-          About</a>
-          </li>
+          <a href="/about" className="text-xl sm:text-[1em] hover:bg-green-500 p-2">
+            About
+          </a>
+        </li>
         <li>
-          <a href="#" className="text-white">
-          Services</a>
-          </li>
+          <a href="#" className="text-xl sm:text-[1em] hover:bg-green-500 p-2">
+            Services
+          </a>
+        </li>
         <li>
-          <a href="#" className="text-white">
-          Contact</a>
-          </li>
+          <a href="#" className="text-xl sm:text-[1em] hover:bg-green-500 p-2">
+            Contact
+          </a>
+        </li>
         <li>
-          <a href="/blog" className="text-white">
-          Blog</a>
-          </li>
-          <li>
-          <a href="/auth/login" className="text-white">
-          Login</a>
-          </li>
-         
+          <a href="/blog" className="text-xl sm:text-[1em] hover:bg-green-500 p-2">
+            Blog
+          </a>
+        </li>
+        <li>
+          <a href="/auth/login" className="text-xl sm:text-[1em] hover:bg-green-500 p-2">
+            Login
+          </a>
+        </li>
       </ul>
-      <div className="flex space-x-4">
+      <div className="sm:flex space-x-4 hidden">
         <FaSearch className="text-white" />
         <FaUser className="text-white" />
-        
       </div>
     </nav>
   );
-}
+};
 
 export default Navbar;

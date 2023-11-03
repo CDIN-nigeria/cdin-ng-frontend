@@ -90,7 +90,7 @@ const Blog = () => {
   };
 
   return (
-    <div className="container mx-auto">
+    <div className="mx-auto w-full">
         <Navbar />
       <div className="p-2">
       <h2 className="text-[3em] flex flex-col  font-bold text-green-900">Blogs</h2>

@@ -7,7 +7,8 @@ import Image from 'next/image';
 const Footercomp = () => {
   return (
     <div className="bg-gray-800 text-white py-4 w-full flex flex-col gap-8">
-            <div className="flex w-full ">
+            <div className="flex w-full flex-col items-center justify-center gap-8 ">
+              <p className="">Get all our latest news and Offers by subcribing to our newslatter</p>
               <form className="flex justify-center items-center w-full">
               <input type="email" placeholder="Enter your email" className="bg-[#c9c9c9] sm:w-1/3 text-white p-2 rounded-l focus:outline-none" />
               <button type="submit" className="bg-green-600 text-white px-4 py-2 rounded-r hover:bg-green-700">

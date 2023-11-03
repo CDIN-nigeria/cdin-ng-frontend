@@ -15,7 +15,7 @@ const Navbar = () => {
           Home</a>
           </li>
         <li>
-          <a href="#" className="text-white">
+          <a href="/about" className="text-white">
           About</a>
           </li>
         <li>

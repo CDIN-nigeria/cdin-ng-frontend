@@ -24,9 +24,9 @@ const Member = () => {
         infinite: true,
         speed: 5,
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 5,
+        autoplaySpeed: 1000,
         nextArrow: <FiChevronRight className="text-[4em] text-black" />,
         prevArrow: <FiChevronLeft className="text-[4em] text-black" />,
     };
@@ -41,15 +41,15 @@ const Member = () => {
 
     return (
         <div className="relative overflow-hidden">
-            <Slider {...settings} ref={sliderRef}>
+            <Slider {...settings} ref={sliderRef} className='overflow-clip flex items-center justify-between align-middle gap-8'>
                 {partnershipPlatforms.map((image, index) => (
                     <div key={index} className="flex items-center justify-center">
                         <img
                             src={image}
                             alt={`Partnership Platform ${index}`}
-                            className="rounded-xl w-fit"
-                            width="150"
-                            height="150"
+                            className="sm:ml-20 w-1/2"
+                            // width="150"
+                            // height="150"
                         />
                     </div>
                 ))}

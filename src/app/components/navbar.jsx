@@ -1,6 +1,7 @@
+"use client"
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { FaSearch, FaUser, FaShoppingCart, FaBars, FaTimes } from 'react-icons/fa'; // Import icons from react-icons
+import { FaSearch, FaUser, FaShoppingCart, FaBars, FaTimes } from 'react-icons/fa'; 
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

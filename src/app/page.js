@@ -28,7 +28,7 @@ export default function Home() {
 <div>
     <Strategy /> 
     </div>
-<div className='mt-8'>
+<div className='mt-8 mb-8'>
     <Member/>
 </div>
 <Whatwedo/>

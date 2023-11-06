@@ -16,9 +16,9 @@ export default function Home() {
 
   return (
    <div className="w-full flex flex-col">
-<div className="w-full">
+      <div className="sticky top-0 flex w-full h-fit items-center">
 
-    <Navbar />
+<Navbar />
 </div>
 <div className="w-full">
 

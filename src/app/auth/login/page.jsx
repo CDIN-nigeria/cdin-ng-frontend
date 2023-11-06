@@ -1,4 +1,6 @@
 'use client'
+import Footercomp from '@/app/components/footer';
+import Navbar from '@/app/components/navbar';
 import { useState } from 'react';
 
 
@@ -14,7 +16,11 @@ const Login = () => {
 
   
   return (
-    <>
+    <div>
+          <div className="sticky top-0 flex w-full h-fit items-center">
+
+<Navbar />
+</div>
      <div className="flex  border-2 border-solid bg-white min-h-screen items-center justify-center">
      <div className="bg-white p-8 rounded-lg shadow-lg border-2 w-96 ml-20]">
      <div className="mt-4 text-gray-600 font-sans font-semibold">
@@ -66,7 +72,8 @@ const Login = () => {
 
 
 </div>
-   </>
+<Footercomp />
+   </div>
   );
 };
 

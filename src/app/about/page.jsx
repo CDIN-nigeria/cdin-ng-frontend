@@ -24,7 +24,10 @@ const AboutUs = () => {
   };
   return (
     <div className="w-full mx-auto">
-        <Navbar />
+              <div className="sticky top-0 flex w-full h-fit items-center">
+
+<Navbar />
+</div>
       <h1 className="text-3xl font-bold px-4">ABOUT US</h1>
       <div className="w-fit items-center px-8 gap-16 flex sm:flex-row flex-col justify-between mt-16">
 <div className="w-full flex flex-col gap-11">

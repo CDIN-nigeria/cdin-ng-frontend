@@ -40,7 +40,8 @@ const Member = () => {
     }
 
     return (
-        <div className="relative overflow-hidden">
+        <div className="relative overflow-hidden flex flex-col gap-8">
+            <p className="font-bold text-[2em] px-8">PARTNERS</p>
             <Slider {...settings} ref={sliderRef} className='overflow-clip flex items-center justify-between align-middle gap-8'>
                 {partnershipPlatforms.map((image, index) => (
                     <div key={index} className="flex items-center justify-center">
